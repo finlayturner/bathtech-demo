@@ -7,5 +7,5 @@ app = Flask(__name__)
 def run():
     user_input = request.args.get("cmd")
 
-    #subprocess.run(f"ls {user_input}", shell=True)
+    subprocess.run(f"ls {user_input}", shell=True)
     return "done"
